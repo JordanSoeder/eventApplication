@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "FindAnEvent";
+}
+<br /><br />
+<img src="~/Content/Images/compass.png" class="center" />
+<br /><br />
+<div class="panel panel-default">
+
+    @Html.Action("_SearchEvents", "Home")
+
+    <div id="EventSearch"></div>
+</div>
+
+@section Scripts
+{
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/Apps/EventScript.js"></script>
+}

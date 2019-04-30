@@ -1,0 +1,63 @@
+﻿@model EventApplication.Models.ViewModels.OrderSummaryViewModel
+@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+
+@using (Html.BeginForm("AddOrder", "Order", FormMethod.Post))
+{
+    @Html.HiddenFor(model => model.EventId)
+    @Html.HiddenFor(model => model.@event)
+    <div>
+        <p>Sale ends on @Html.DisplayTextFor(model => model.@event.StartDate)</p>
+        <div class="row register">
+            <div class="col-md-5">
+                @Html.DisplayTextFor(model => model.@event.Title)<br />
+                FREE
+            </div>
+            <div class="col-md-3" id="tickets">
+                Number of Tickets<br />
+
+                @{
+                    var selectList = new SelectList(
+                        new List<SelectListItem>
+                        {
+                                 new SelectListItem {Text = "1", Value = "1"},
+                                 new SelectListItem {Text = "2", Value = "2"},
+                                 new SelectListItem {Text = "3", Value = "3"},
+                                 new SelectListItem {Text = "4", Value = "4"},
+                                 new SelectListItem {Text = "5", Value = "5"},
+                                 new SelectListItem {Text = "6", Value = "6"},
+                                 new SelectListItem {Text = "7", Value = "7"},
+                                 new SelectListItem {Text = "8", Value = "8"},
+                                 new SelectListItem {Text = "9", Value = "9"},
+                                 new SelectListItem {Text = "10", Value = "10"},
+                        }, "Value", "Text", Model.SelectedOrderTicketQuantity);
+                }
+
+                @Html.DropDownListFor(m => m.SelectedOrderTicketQuantity, selectList, "", new { @class = "css-class" })
+
+            </div>
+        </div>
+        <br />
+        <div>
+            @if (Request.IsAuthenticated)
+            {
+                <p>
+                    <input id="Submit1" type="submit" value="Checkout" class="btn btn-primary"/>
+                </p>
+            }
+            else
+            {
+                @Html.ActionLink("Checkout", "Login", "Account", routeValues: null, htmlAttributes: new { @class = "btn btn-primary" })
+            }
+        </div>
+    </div>
+}
+@section Scripts
+{
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+
+}

@@ -1,0 +1,215 @@
+﻿body {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    background-color: aliceblue;
+}
+
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.LastMinuteDeals h3 {
+    background-color: darkolivegreen;
+}
+.header {
+    background-color: midnightblue;
+}
+
+table.top-header {
+    width: 100%;
+    height:50px;
+}
+    table.top-header tr {
+        background-color: midnightblue;
+    }
+
+ul.header-left {
+    float: left;
+}
+ul.header-left, ul.header-right {
+    vertical-align:middle;
+    margin-top : 10px;
+    margin-bottom:10px;
+}
+
+ul.header-left li, ul.header-right li {
+    float: left;
+}
+ul.header-right-div, td.header-right {
+    float: right;
+}
+ul.header-right {
+    padding-right:20px;
+}
+ul.header-left li, ul.header-right li {
+    vertical-align: middle;
+    list-style: none;
+}
+ul.header-left li a, ul.header-right li a{
+    display:block;
+    padding:7px 9px;
+}
+li a:link, li a:visited {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+}
+li.logo a:link, li.logo a:visited{
+    font-weight:700;
+}
+footer {
+    background-color: midnightblue;
+    color: aliceblue;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#find-event {
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+#find-event h2 {
+    text-align: center;
+    color:midnightblue;
+}
+
+.btn-primary, a.RemoveLink {
+    background-image: -webkit-linear-gradient(top, #42cbf4 0%, #42cbf4 100%);
+    background-image: -o-linear-gradient(top, #42cbf4 0%, #42cbf4 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#42cbf4), to(#42cbf4));
+    background-image: linear-gradient(to bottom, #42cbf4 0%, #42cbf4 100%);
+    filter: progid:dximagetransform.microsoft.gradient(startcolorstr='#42cbf4', endcolorstr='#42cbf4', gradienttype=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled = false);
+    background-repeat: repeat-x;
+    border-color: #42cbf4;
+}
+
+.btn-grey {
+    background-image: -webkit-linear-gradient(top, #5b5b5b 0%, #5b5b5b 100%);
+    background-image: -o-linear-gradient(top, #5b5b5b 0%, #5b5b5b 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#5b5b5b), to(#5b5b5b));
+    background-image: linear-gradient(to bottom, #5b5b5b 0%, #5b5b5b 100%);
+    filter: progid:dximagetransform.microsoft.gradient(startcolorstr='#5b5b5b', endcolorstr='#5b5b5b', gradienttype=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled = false);
+    background-repeat: repeat-x;
+    border-color: #5b5b5b;
+    color: aliceblue;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btn-red {
+    background-image: -webkit-linear-gradient(top, #ba2527 0%, #ba2527 100%);
+    background-image: -o-linear-gradient(top, #ba2527 0%, #ba2527 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ba2527), to(#ba2527));
+    background-image: linear-gradient(to bottom, #ba2527 0%, #ba2527 100%);
+    filter: progid:dximagetransform.microsoft.gradient(startcolorstr='#ba2527', endcolorstr='#ba2527', gradienttype=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled = false);
+    background-repeat: repeat-x;
+    border-color: #ba2527;
+    color: aliceblue;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#find-event .panel-body {
+    background-color: lightgrey;
+}
+#find-event .panel {
+    border: none;
+    box-shadow: none;
+}
+#EventSearch h3{
+    text-align: center;
+    color: aliceblue;
+}
+#EventSearch table tr th{
+    background-color:dodgerblue;
+    color:aliceblue;
+}
+#EventSearch table tr td {
+    color: midnightblue;
+    background-color: lightgrey;
+}
+#EventSearch table tr td a:link, #EventSearch table tr td a:visited {
+    color: dodgerblue;
+}
+
+#LastMinuteDeals a {
+    text-align: center;
+    width: 100%;
+}
+#LastMinuteDeals h3, #LastMinuteDeals table, #LastMinuteDeals table tr th, #LastMinuteDeals table tr td {
+    
+    color: aliceblue;
+    background-color: dodgerblue;
+}
+#LastMinuteDeals h3 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#LastMinuteDeals tr {
+    border-bottom-color: aliceblue;
+    background-color: dodgerblue;
+}
+h2.find-event {
+    text-align: center;
+    color: lightsteelblue;
+    font-size: 40px;
+}
+.form-inline{
+    align-items:center;
+}
+.intro-box {
+    color: midnightblue;
+    background-color: dodgerblue;
+    width: auto;
+}
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+.register {
+    box-shadow: -5px -10px inset;
+    padding: 30px;
+    background-color : lightgrey;
+}
+.register div {
+    font-weight:700;
+}
+.order-summary li {
+    list-style: none;
+}
+table.orders, table.orders tr, table.orders tr th {
+    border-top: none;
+}
+
+tr.order-rows {
+    border: 1px solid;
+}
+
+table.orders tr.order-rows td {
+    vertical-align: middle;
+}
+.search-failed {
+    color: grey;
+    text-align: center;
+    font-weight: 800;
+}

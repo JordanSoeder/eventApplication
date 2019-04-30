@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <div class="intro-box">
+        <h1>Event Application</h1>
+        <p>Find Events near you and never miss out again!</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6" id="find-event">
+        <h2>Find an Event</h2>
+        @Html.Action("_SearchEvents", "Home")
+    </div>
+    <div class="col-md-6" id="last-minute-deals">
+        <div id="LastMinuteDeals">
+            @Ajax.ActionLink("Click to see Last Minute Deals",
+                "LastMinuteDeals",
+                null,
+                new AjaxOptions
+                {
+                    UpdateTargetId = "LastMinuteDeals",
+                    InsertionMode = InsertionMode.Replace,
+                    HttpMethod = "GET"
+                }
+                ,
+                new {@class = "btn btn-primary"})
+        </div>
+    </div>
+</div>
+<br /><br />
+<div id="EventSearch"></div>
+
+@section Scripts
+{
+    <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="~/Scripts/Apps/EventScript.js"></script>
+}
